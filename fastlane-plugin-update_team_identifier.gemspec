@@ -8,10 +8,10 @@ Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-update_team_identifier'
   spec.version       = Fastlane::UpdateTeamIdentifier::VERSION
   spec.author        = 'Jordan Bondo'
-  spec.email         = 'jordanbondo@icloud.com'
+  spec.email         = 'jordan.bondo@gmail.com'
 
   spec.summary       = 'Updates the Team Identifier for a given target'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-update_team_identifier"
+  spec.homepage      = "https://github.com/faithfracture/update_team_identifier"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   # Don't add a dependency to fastlane or fastlane_re
   # since this would cause a circular dependency
 
-  # spec.add_dependency 'your-dependency', '~> 1.0.0'
+  spec.add_dependency 'xcodeproj', '~> 1.3.3'
 
   spec.add_development_dependency('pry')
   spec.add_development_dependency('bundler')
